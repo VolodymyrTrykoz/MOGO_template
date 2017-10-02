@@ -755,7 +755,6 @@ width: 4px;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	
 	margin: 5px 0;
 }
 
@@ -807,9 +806,120 @@ width: 4px;
 
 
 
+/*----Section11-----*/
+
+	.section11 {
+		background-image: url(../img/clientbg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	.section11:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	.section11-clients-wrap-wrap {
+		margin: 35px 0;
+	}
+
+	.section11-clients-wrap-img {
+		border-radius: 50%;
+		width: 100%;
+	}
+
+	
+	.section11-clients-wrap-text-name {
+	    color: #333;
+	    text-transform: uppercase;
+	    font-family: Montserrat, sans-serif;
+	    font-size: 14px;
+	    
+    }
+
+    .section11-clients-wrap-text .roboto {
+    	text-transform: none;
+    	font-style: italic;
+    	color: #656565;
+    }
+	
+	.section11-clients-wrap-text .divider {
+		margin: 15px 0;
+	}
+	
+	.section11-clients-wrap-text-descr {
+		color: #999;
+	}
+	
 
 
 
+/*----Section12-----*/
+
+.section12__block {
+	position: relative;
+}
+
+.section12__block_image {
+	width: 100%;
+}	
+
+.section12__block-data {
+	position: absolute;
+	color: #fff;
+	left: -10px;
+	top: 138px;
+	background-color: #95e1d3; 
+	padding: 0 10px;
+	margin: 0;
+
+}
+
+.section12__block-data-number {
+	font-size: 30px;
+	font-weight: 600;	
+	margin: 0;
+
+}
+
+.section12__block-data-month {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 15px;
+	margin: 0;
+}
+
+.section12_heading {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	padding: 20px 0;
+}
+
+.section12_descr {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 15px;
+	color: #b3b3b3;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.section12__block_info_statistic .fa {
+	color: #95e1d3;
+	font-size: 15px;
+}
+
+.section12__block_info_statistic .counter1 {
+	margin-right: 15px;
+	color: #c6c6c6;
+}
 
 
 
@@ -968,5 +1078,9 @@ width: 4px;
 	/*----Section6-----*/	
 	.section6__carousel-item-wrapper i{
 		font-size: 30px;
+	}
+	/*----Section12-----*/	
+	.section12__block-data {
+		top: 50px;
 	}
 }
