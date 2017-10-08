@@ -46,8 +46,8 @@
 		font-size: 50px;
 	}
 	/*----Section12-----*/
-	.section12__block-data {
-		top: 50px;
+	.our-stories {
+		margin-bottom: 20px;
 	}
 	/*----Section14-----*/	
 	.b-social__span {
@@ -58,7 +58,7 @@
 
 
 @media screen and (max-width: 690px) {
-/*----Section1-----*/	
+/*----Header-----*/	
 	.header__nav {
 		margin-top: 80px;
 		float: none;
@@ -165,8 +165,8 @@
 		display: none;
 	}
 	/*----Section12-----*/	
-	.section12__block-data {
-		top: 50px;
+	.our-stories {
+		margin-bottom: 20px;
 	}
 	
 }
