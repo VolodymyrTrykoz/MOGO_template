@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
 	<title>MOGO</title>
 
+
 	<!--I had to attach old version of JQuery because counterUp does not support new one. I also had to add 
-	scrippts here because this is the only way
+	scrippts here because this is the only way it works// strange peculiarity in my opinion
 	https://github.com/bfintal/Counter-Up
 	-->
 
@@ -30,8 +32,6 @@
             	});	
 
         	});
-
-
     </script>
 
 
@@ -41,86 +41,87 @@
 	<!--HEADER-->		
 
 	<header>
-		<div class="header-main">
-			<div class="main_gradient">
+		<div class="face-page-bg">
+			<div class="face-page-wrapper">
 				
 					<div class="row container">
-						<div class="main_gradient-naw-wrapper">
-							<div class="logo pull-left"><a href="#">MoGo</a></div>
-							<nav class="main_nav pull-right">
-								<ul>
-									<li>ABOUT</li>
-									<li>SERVICE</li>
-									<li>WORK</li>
-									<li>BLOG</li>
-									<li>CONTACT</li>
-									<span class="bag"></span>
-									<span class="m_glass"></span>
+						<div class="face-page__header-wrapper">
+							<a href="#" class="header__logo">MoGo</a>
+							<nav class="header__nav">
+								<ul class="nav-group">
+									<li class="nav__item"><a href="#" class="group__item-a">ABOUT</a></li>
+									<li class="nav__item"><a href="#" class="group__item-a">SERVICE</a></li>
+									<li class="nav__item"><a href="#" class="group__item-a">WORK</a></li>
+									<li class="nav__item"><a href="#" class="group__item-a">BLOG</a></li>
+									<li class="nav__item"><a href="#" class="group__item-a">CONTACT</a></li>
+									<a href="#" class="nav__item"><i class="fa fa-shopping-cart group__item-fa" aria-hidden="true"></i></a>
+									<a href="#" class="nav__item"><i class="fa fa-search group__item-fa" aria-hidden="true"></i></i></a>
 								</ul>
 							</nav>
-						</div>	
-					</div>
-
-					<div class="row">
+						</div>
 						<div class="col-md-12">
-							<div class="header_text text-center">
-								<h2>Creative Template</h2>
-								<h1>WELCOME <br> TO MOGO</h1>
+							<div class="header__text white text-center">
+								<h2 class="header__text-h2">Creative Template</h2>
+								<h1 class="header__text-h1">WELCOME <br> TO MOGO</h1>
 								<div class="divider"></div>
-								<button>LEARN MORE</button>
+								<button class="header__text-learn-more">LEARN MORE</button>
 							</div>
 						</div>			
-					</div>
+					
 
-						<div class="second_nav">
+						<div class="second__nav">
 							<ul>
 
-								<li id="intro"><a href="#">
-										<div class="line" >
-											<div></div>
+								<li id="intro" class="second__nav-item"><a href="#">
+										<div class="nav-item-line" >
+											<div class="nav-item-line__container-line first-line"></div>
 										</div>
-										<div>
-											<p class="number">01</p>
-											<p>INTRO</p>
+										<div class="nav-item-description">
+											<p class="nav-item-description__number">01</p>
+											<p class="nav-item-description__text">INTRO</p>
 										</div>
 									</a>	
 								</li>
 
-								<li id="work"><a href="#">
-										<div class="line" >
-											<div></div>
+								<li id="work" class="second__nav-item"><a href="#">
+										<div class="nav-item-line" >
+											<div class="nav-item-line__container-line second-line"></div>
 										</div>
-										<div>
-											<p class="number">02</p>
-											<p>WORK</p>
+										<div class="nav-item-description">
+											<p class="nav-item-description__number">02</p>
+											<p class="nav-item-description__text">WORK</p>
 										</div>	
 									</a>	
 								</li>
 
-								<li id="about"><a href="#">
-										<div class="line" >
-											<div></div>
+								<li id="about" class="second__nav-item"><a href="#">
+										<div class="nav-item-line" >
+											<div class="nav-item-line__container-line third-line"></div>
 										</div>
-										<div>
-											<p class="number">03</p>
-											<p>ABOUT</p>
+										<div class="nav-item-description">
+											<p class="nav-item-description__number">03</p>
+											<p class="nav-item-description__text">ABOUT</p>
 										</div>
 									</a>		
 								</li>
 
-								<li id="contacts"><a href="#">
-										<div class="line" >
-											<div></div>
+								<li id="contacts" class="second__nav-item"><a href="#">
+										<div class="nav-item-line" >
+											<div class="nav-item-line__container-line fouth-line"></div>
 										</div>
-										<div>
-											<p class="number">04</p>
-											<p>CONTACTS</p>
+										<div class="nav-item-description">
+											<p class="nav-item-description__number">04</p>
+											<p class="nav-item-description__text">CONTACTS</p>
 										</div>
 									</a>		
 								</li>
 
 							</ul>
-						</div>	
+						</div>		
+					</div>
+
+					
+						
 			</div>	
 		</div>
 	</header>
@@ -137,20 +138,17 @@
 			<h3 class="h3_descr text-center">story about us</h3>
 			<div class="divider divider_red"></div>
 			<p class="p_descr text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis maxime aspernatur sit nesciunt deleniti. Molestiae alias voluptatem quisquam incidunt, quam! Voluptates molestias reiciendis natus quibusdam, ut neque corporis itaque facere!</p>
-		</div>	
+		
 
-
-		<div class="container">
-
-			<div class="row story_img_wrapper">
+			<div class="row story-img-wrapper">
 				<div class="col-md-4 col-sm-12 text-center mar-bot-20-sm">
 					<a href="#">
 						<figure class="section1-figure-group">
-							<img src="img/picture1.png" alt="picture1" class="story-img-wrapper__img">
-							<figcaption>
-								<img src="img/team.png" alt="team" class="img-team">
-									<p>super team</p>
-								</figcaption>
+							<img src="img/picture1.png" alt="picture1" class="section1-figure-group__img">
+							<figcaption class="section1-figure-group__figcapt">
+								<img src="img/team.png" alt="team" class="figcapt__img-team">
+								<p class="figcapt__paragraph">super team</p>
+							</figcaption>
 						</figure>
 					</a>
 				</div>
@@ -158,10 +156,10 @@
 				<div class="col-md-4 col-sm-12 text-center mar-bot-20-sm">
 					<a href="#">
 						<figure class="section1-figure-group">
-							<img src="img/picture2.png" alt="picture2" class="story-img-wrapper__img">
-							<figcaption>
-								<img src="img/team.png" alt="team" class="img-team">
-								<p>super team</p>
+							<img src="img/picture2.png" alt="picture2" class="section1-figure-group__img">
+							<figcaption class="section1-figure-group__figcapt">
+								<img src="img/team.png" alt="team" class="figcapt__img-team">
+								<p class="figcapt__paragraph">super team</p>
 							</figcaption>
 						</figure>	
 					</a>
@@ -170,10 +168,10 @@
 				<div class="col-md-4 col-sm-12 text-center mar-bot-20-sm">
 					<a href="#">
 						<figure class="section1-figure-group">
-							<img src="img/picture3.png" alt="picture3" class="story-img-wrapper__img">
-							<figcaption>
-								<img src="img/team.png" alt="team" class="img-team">
-								<p>super team</p>
+							<img src="img/picture3.png" alt="picture3" class="section1-figure-group__img">
+							<figcaption class="section1-figure-group__figcapt">
+								<img src="img/team.png" alt="team" class="figcapt__img-team">
+								<p class="figcapt__paragraph">super team</p>
 							</figcaption>
 						</figure>
 					</a>
@@ -188,30 +186,35 @@
 
 	<section class="section2">
 
+<!--
+
+		https://codepen.io/shivasurya/pen/FatiB?q=counter&limit=all&type=type-pens
+
+-->	
 		<div class="container">
-			<div class="section2_number">
+			<div class="section2__number">
 				<span class="counter">42</span>
-				<p>members</p>
+				<p class="montserrat white">web design projects</p>
 			</div>
 
-			<div class="section2_number">
+			<div class="section2__number">
 				<span class="counter">123</span>
-				<p>members</p>
+				<p class="montserrat white">happy client</p>
 			</div>
 
-			<div class="section2_number">
+			<div class="section2__number">
 				<span class="counter">15</span>
-				<p>members</p>
+				<p class="montserrat white">award winner</p>
 			</div>
 
-			<div class="section2_number">
+			<div class="section2__number">
 				<span class="counter">99</span>
-				<p>members</p>
+				<p class="montserrat white">cup of coffee</p>
 			</div>
 
-			<div class="section2_number">
+			<div class="section2__number">
 				<span class="counter">24</span>
-				<p>members</p>
+				<p class="montserrat white">members</p>
 			</div>
 
 		</div>
@@ -235,30 +238,30 @@
 				
 				<div class="col-md-4 col-sm-12 section3__service">
 					<div class="section3__wrap-icon">
-						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						<i class="fa fa-clock-o fa-icon" aria-hidden="true"></i>
 					</div>
 					<div class="section3__wrap-text">
-						<h5 class="section3__h5-header">photography</h5>
+						<h5 class="montserrat">photography</h5>
 						<p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>	
 				</div>
 
 				<div class="col-md-4 col-sm-12 section3__service">
 					<div class="section3__wrap-icon">
-						<i class="fa fa-area-chart" aria-hidden="true"></i>
+						<i class="fa fa-area-chart fa-icon" aria-hidden="true"></i>
 					</div>
 					<div class="section3__wrap-text">
-						<h5 class="section3__h5-header">web design</h5>
+						<h5 class="montserrat">web design</h5>
 						<p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>	
 				</div>
 
 				<div class="col-md-4 col-sm-12 section3__service">
 					<div class="section3__wrap-icon">
-						<i class="fa fa-television" aria-hidden="true"></i>
+						<i class="fa fa-television fa-icon" aria-hidden="true"></i>
 					</div>
 					<div class="section3__wrap-text">
-						<h5 class="section3__h5-header">creativity</h5>
+						<h5 class="montserrat">creativity</h5>
 						<p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>	
 				</div>
@@ -267,30 +270,30 @@
 
 				<div class="col-md-4 col-sm-12 section3__service">
 					<div class="section3__wrap-icon">
-						<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+						<i class="fa fa-newspaper-o fa-icon" aria-hidden="true"></i>
 					</div>
 					<div class="section3__wrap-text">
-						<h5 class="section3__h5-header">seo</h5>
+						<h5 class="montserrat">seo</h5>
 						<p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>	
 				</div>
 
 				<div class="col-md-4 col-sm-12 section3__service">
 					<div class="section3__wrap-icon">
-						<i class="fa fa-home" aria-hidden="true"></i>
+						<i class="fa fa-home fa-icon" aria-hidden="true"></i>
 					</div>
 					<div class="section3__wrap-text">
-						<h5 class="section3__h5-header">html/css</h5>
+						<h5 class="montserrat">html/css</h5>
 						<p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>	
 				</div>
 
 				<div class="col-md-4 col-sm-12 section3__service">
 					<div class="section3__wrap-icon">
-						<i class="fa fa-film" aria-hidden="true"></i>
+						<i class="fa fa-film fa-icon" aria-hidden="true"></i>
 					</div>
 					<div class="section3__wrap-text">
-						<h5 class="section3__h5-header">digital</h5>
+						<h5 class="montserrat">digital</h5>
 						<p class="roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>	
 				</div>
@@ -340,10 +343,10 @@
 						<div class="card">
 							    <div class="card-header" role="tab" id="headingOne">
 							      <h5 class="mb-0 accordion_heading">
-							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							        	<i class="fa fa-picture-o" aria-hidden="true"></i>
+							        <a class="accordion_heading__link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							        	<i class="fa fa-picture-o fa-icon mr-15" aria-hidden="true"></i>
 							          photography
-							          <i class="fa fa-angle-down" aria-hidden="true"></i>
+							          <i class="fa fa-angle-down fa-icon pull-right" aria-hidden="true"></i>
 							        </a>
 							      </h5>
 							    </div>
@@ -360,10 +363,10 @@
 						<div class="card">
 							    <div class="card-header" role="tab" id="headingTwo">
 							      <h5 class="mb-0 accordion_heading">
-							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							        	<i class="fa fa-sliders" aria-hidden="true"></i>
+							       <a class="accordion_heading__link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							        	<i class="fa fa-sliders fa-icon mr-15" aria-hidden="true"></i>
 							          creativity
-							          <i class="fa fa-angle-down" aria-hidden="true"></i>
+							          <i class="fa fa-angle-down fa-icon pull-right" aria-hidden="true"></i>
 							        </a>
 							      </h5>
 							    </div>
@@ -379,10 +382,10 @@
 						<div class="card">
 							    <div class="card-header" role="tab" id="headingThree">
 							      <h5 class="mb-0 accordion_heading">
-							        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							        	<i class="fa fa-bullseye" aria-hidden="true"></i>
+							        <a class="accordion_heading__link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							        	<i class="fa fa-bullseye fa-icon mr-15" aria-hidden="true"></i>
 							          web design
-							          <i class="fa fa-angle-down" aria-hidden="true"></i>
+							          <i class="fa fa-angle-down fa-icon pull-right" aria-hidden="true"></i>
 							        </a>
 							      </h5>
 							    </div>
@@ -409,10 +412,10 @@
 					  		<div class="carousel-inner" role="listbox">
 					    		<div class="carousel-item active">
 					    			<div class="section6__carousel-item-wrapper roboto">
-					    				<i class="fa fa-comments" aria-hidden="true"></i>
+					    				<i class="fa fa-comments carousel-item-wrapper__icon" aria-hidden="true"></i>
 					    				<div class="section6__carousel-item-wrapper-text">
 					      					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nesciunt repudiandae, dolorum 	perspiciatis magni rem earum ipsa repellendus, unde dolor placeat ullam saepe incidunt recusandae impedit quos harum! Ab, ipsum."</p>
-					      					<div class="divider divider_red"></div>
+					      					<div class="divider divider_red carousel-item__divider"></div>
 					      					<span class="section6__carousel-item-wrapper-text_p">Joe Doe</span>
 					      				</div>	
 					      			</div>	
@@ -420,10 +423,10 @@
 
 					    		<div class="carousel-item">
 					      			<div class="section6__carousel-item-wrapper roboto">
-					      				<i class="fa fa-commenting-o" aria-hidden="true"></i>
+					      				<i class="fa fa-commenting-o carousel-item-wrapper__icon" aria-hidden="true"></i>
 					      				<div class="section6__carousel-item-wrapper-text">
 					      					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nesciunt repudiandae, dolorum 	perspiciatis magni rem earum ipsa repellendus, unde dolor placeat ullam saepe incidunt recusandae impedit quos harum! Ab, ipsum."</p>
-					      					<div class="divider divider_red"></div>
+					      					<div class="divider divider_red carousel-item__divider"></div>
 					      					<span class="section6__carousel-item-wrapper-text_p">Arkady Ukupnik</span>
 					      				</div>	
 					      			</div>	
@@ -431,10 +434,10 @@
 
 					    		<div class="carousel-item">
 					      			<div class="section6__carousel-item-wrapper roboto">
-					      				<i class="fa fa-comments-o" aria-hidden="true"></i>
+					      				<i class="fa fa-comments-o carousel-item-wrapper__icon" aria-hidden="true"></i>
 					      				<div class="section6__carousel-item-wrapper-text">
 					      					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nesciunt repudiandae, dolorum 	perspiciatis magni rem earum ipsa repellendus, unde dolor placeat ullam saepe incidunt recusandae impedit quos harum! Ab, ipsum."</p>
-					      					<div class="divider divider_red"></div>
+					      					<div class="divider divider_red carousel-item__divider"></div>
 					      					<span class="section6__carousel-item-wrapper-text_p">Pfyliph Kyrkorov</span>
 					      				</div>	
 					      			</div>	
@@ -478,17 +481,17 @@
 
 
 								<div class="section7-figure-group__figcapt-social">
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-facebook figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest-p figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram figcapt-social__icon" aria-hidden="true"></i></a>
 								</div>
 
 							</figcaption>
 
 					</figure>
 
-					<p class="section7__team-wrapper-name">matthew dix</p>
+					<p class="section7__team-wrapper-name montserrat">matthew dix</p>
 
 					<p class="section7__team-wrapper-obligation roboto">Graphic design</p>
 					
@@ -506,17 +509,17 @@
 
 
 								<div class="section7-figure-group__figcapt-social">
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-facebook figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest-p figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram figcapt-social__icon" aria-hidden="true"></i></a>
 								</div>
 
 							</figcaption>
 
 					</figure>
 
-					<p class="section7__team-wrapper-name">cristopher campbel</p>
+					<p class="section7__team-wrapper-name montserrat">cristopher campbel</p>
 
 					<p class="section7__team-wrapper-obligation roboto">Branding/UX Design</p>
 					
@@ -534,17 +537,17 @@
 
 
 								<div class="section7-figure-group__figcapt-social">
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-facebook figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest-p figcapt-social__icon" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram figcapt-social__icon" aria-hidden="true"></i></a>
 								</div>
 
 							</figcaption>
 
 					</figure>
 
-					<p class="section7__team-wrapper-name">michael fertic</p>
+					<p class="section7__team-wrapper-name montserrat">michael fertic</p>
 
 					<p class="section7__team-wrapper-obligation roboto">Developer</p>
 					
@@ -594,12 +597,8 @@
 			<p class="p_descr text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis maxime aspernatur sit nesciunt deleniti. Molestiae alias voluptatem quisquam incidunt, quam! Voluptates molestias reiciendis natus quibusdam, ut neque corporis itaque facere!</p>
 		</div>	
 	
-
-
-
-	<!--I have made this portfolio by using table/   just for fun :)   -->	
 	
-		<table width="100%" class="section9__portfolio">
+		<table width="auto" class="section9__portfolio">
 			<tr>
 
 				<td class="section9__portfolio-pointer">
@@ -607,7 +606,7 @@
 							<a href="#">
 								<img src="img/pf1.jpg" alt="pf1" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -621,7 +620,7 @@
 							<a href="#">
 								<img src="img/pf2.jpg" alt="pf2" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -634,7 +633,7 @@
 							<a href="#">
 								<img src="img/pf3.jpg" alt="pf3" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -647,7 +646,7 @@
 							<a href="#">
 								<img src="img/pf4.jpg" alt="pf4" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -665,7 +664,7 @@
 							<a href="#">
 								<img src="img/pf5.jpg" alt="pf5" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -678,7 +677,7 @@
 							<a href="#">
 								<img src="img/pf6.jpg" alt="pf6" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -691,7 +690,7 @@
 							<a href="#">
 								<img src="img/pf7.jpg" alt="pf7" class="pf__image">
 								<figcaption class="section9__portfolio-item">
-									<i class="fa fa-picture-o" aria-hidden="true"></i>
+									<i class="fa fa-picture-o section9__portfolio-item-icon" aria-hidden="true"></i>
 									<p class="section9__portfolio-item__obligation">creatively designed</p>
 									<p class="section9__portfolio-item__descr">Lorem ipsum dolor sit</p>
 								</figcaption>
@@ -702,6 +701,41 @@
 			</tr>
 
 		</table>
+		
+		
+
+
+		<!--
+		<div class="grid">
+			<div class="image image-first">
+				
+			</div>
+			<div class="image image-second">
+				
+			</div>
+			<div class="image image-third">
+				
+			</div>
+			<div class="image image-fourth">
+				
+			</div>
+			<div class="image image-fifth">
+				
+			</div>
+			<div class="image image-sixth">
+				
+			</div>
+			<div class="image image-seventh">
+				
+			</div>
+		</div>
+
+
+-->
+
+		
+
+
 
 	</section>
 	
@@ -792,56 +826,56 @@
 					<div class="col-md-6 col-sm-12 section11-clients-wrap-wrap">
 
 						<div class="col-md-3 col-xs-3">
-							<img src="img/client1.jpg" alt="client1" class="section11-clients-wrap-img">
+							<img src="img/client1.jpg" alt="client1" class="section11-clients-wrap__img">
 						</div>
 
 						<div class="col-md-9 col-xs-9 section11-clients-wrap-text">
-							<p class="section11-clients-wrap-text-name">matthew dix</p>
+							<p class="section11-clients-wrap-text__name">matthew dix</p>
 							<p class="roboto">Graphic Design</p>
 							<div class="divider divider_red"></div>
-							<p class="section11-clients-wrap-text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
+							<p class="section11-clients-wrap-text__descr roboto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
 						</div>
 
 					</div>
 
 					<div class="col-md-6 col-sm-12 section11-clients-wrap-wrap">
 						<div class="col-md-3 col-xs-3">
-							<img src="img/client2.jpg" alt="client1" class="section11-clients-wrap-img">
+							<img src="img/client2.jpg" alt="client2" class="section11-clients-wrap__img">
 						</div>
 
 						<div class="col-md-9 col-xs-9 section11-clients-wrap-text">
-							<p class="section11-clients-wrap-text-name">matthew dix</p>
+							<p class="section11-clients-wrap-text__name">matthew dix</p>
 							<p class="roboto">Graphic Design</p>
 							<div class="divider divider_red"></div>
-							<p class="section11-clients-wrap-text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
+							<p class="section11-clients-wrap-text__descr roboto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
 						</div>
 
 					</div>
 
 					<div class="col-md-6 col-sm-12 section11-clients-wrap-wrap">
 						<div class="col-md-3 col-xs-3">
-							<img src="img/client3.jpg" alt="client1" class="section11-clients-wrap-img">
+							<img src="img/client3.jpg" alt="client3" class="section11-clients-wrap__img">
 						</div>
 
 						<div class="col-md-9 col-xs-9 section11-clients-wrap-text">
-							<p class="section11-clients-wrap-text-name">matthew dix</p>
+							<p class="section11-clients-wrap-text__name">matthew dix</p>
 							<p class="roboto">Graphic Design</p>
 							<div class="divider divider_red"></div>
-							<p class="section11-clients-wrap-text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
+							<p class="section11-clients-wrap-text__descr roboto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
 						</div>
 
 					</div>
 
 					<div class="col-md-6 col-sm-12 section11-clients-wrap-wrap">
 						<div class="col-md-3 col-xs-3">
-							<img src="img/client4.jpg" alt="client1" class="section11-clients-wrap-img">
+							<img src="img/client4.jpg" alt="client4" class="section11-clients-wrap__img">
 						</div>
 
 						<div class="col-md-9 col-xs-9 section11-clients-wrap-text">
-							<p class="section11-clients-wrap-text-name">matthew dix</p>
+							<p class="section11-clients-wrap-text__name">matthew dix</p>
 							<p class="roboto">Graphic Design</p>
 							<div class="divider divider_red"></div>
-							<p class="section11-clients-wrap-text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
+							<p class="section11-clients-wrap-text__descr roboto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatibus incidunt harum officia inventore natus, corporis a at repudiandae cumque vero quia fugit, ipsam voluptatem commodi possimus dignissimos tempore aut!</p>
 						</div>
 
 					</div>
@@ -850,7 +884,6 @@
 		</div>
 
 	</section>
-
 
 
 
@@ -874,14 +907,14 @@
 										<p class="section12__block-data-number">15</p>
 										<p class="section12__block-data-month">Jan</p>
 									</div>
-									<h5 class="section12_heading">Lorem ipsum dolor sit amet</h5>
-									<p class="section12_descr">
+									<h5 class="section12_heading montserrat">Lorem ipsum dolor sit amet</h5>
+									<p class="section12_descr roboto">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione at architecto, unde iste sit
 									</p>
 									<div class="section12__block_info_statistic">
 										<i class="fa fa-eye" aria-hidden="true"></i>
 										<span class="counter1">222</span>
-										<i class="fa fa-commenting-o" aria-hidden="true"></i>
+										<i class="fa fa-commenting" aria-hidden="true"></i>
 										<span class="counter1">17</span>
 									</div>
 								</figcaption>
@@ -894,17 +927,17 @@
 								<img src="img/blog2.jpg" alt="blog2" class="section12__block_image">
 								<figcaption class="section12__block_info">
 									<div class="section12__block-data">
-										<p class="section12__block-data-number">15</p>
+										<p class="section12__block-data-number">14</p>
 										<p class="section12__block-data-month">Jan</p>
 									</div>
-									<h5 class="section12_heading">Lorem ipsum dolor sit amet</h5>
-									<p class="section12_descr">
+									<h5 class="section12_heading montserrat">Lorem ipsum dolor sit amet</h5>
+									<p class="section12_descr roboto">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione at architecto, unde iste sit
 									</p>
 									<div class="section12__block_info_statistic">
 										<i class="fa fa-eye" aria-hidden="true"></i>
 										<span class="counter1">992</span>
-										<i class="fa fa-commenting-o" aria-hidden="true"></i>
+										<i class="fa fa-commenting" aria-hidden="true"></i>
 										<span class="counter1">42</span>
 									</div>
 								</figcaption>
@@ -917,41 +950,182 @@
 								<img src="img/blog3.jpg" alt="blog3" class="section12__block_image">
 								<figcaption class="section12__block_info">
 									<div class="section12__block-data">
-										<p class="section12__block-data-number">15</p>
+										<p class="section12__block-data-number">12</p>
 										<p class="section12__block-data-month">Jan</p>
 									</div>
-									<h5 class="section12_heading">Lorem ipsum dolor sit amet</h5>
-									<p class="section12_descr">
+									<h5 class="section12_heading montserrat">Lorem ipsum dolor sit amet</h5>
+									<p class="section12_descr roboto">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione at architecto, unde iste sit
 									</p>
 									<div class="section12__block_info_statistic">
 										<i class="fa fa-eye" aria-hidden="true"></i>
 										<span class="counter1">1560</span>
-										<i class="fa fa-commenting-o" aria-hidden="true"></i>
+										<i class="fa fa-commenting" aria-hidden="true"></i>
 										<span class="counter1">98</span>
 									</div>
 								</figcaption>
 				</figure>
 			</div>
 
-
-
-
 		</div>			
 
 	</section>	
 
 
+	<!--SECTION 13-->
+
+
+	<section class="section13">
+		
+		<div id="map" class="section13__map"></div>
+
+
+			<script type="text/javascript">
+				function myMap() {
+				var mapCanvas = document.getElementById("map");
+				var mapOptions = {
+				center: new google.maps.LatLng(43.64, -79.43),
+				zoom: 12
+				};
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+				};
+			</script>
+		</div>
+
+	</section>
 
 
 
+	<!--SECTION 14-->
+
+	<section class="section14">
+		<div class="container">
+			<div class="col-md-5 col-sm-12 section14__left">
+				<div class="b-logo">
+					<img src="img/footerlogo.png" alt="footlogo" class="img-responsive">
+				</div>
+
+				<div class="b-text roboto">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quis voluptatem. Ipsa accusantium voluptates et odio, neque, architecto deleniti in eaque sunt quasi dolorum. Quas, molestiae dolorem atque excepturi minus!</p>
+				</div>
+
+				<div class="b-folowers">
+					<p class="montserrat b-folowers__p"><span class="b-folowers__p-span">15K</span> followers</p>
+				</div>
+
+				<div class="b-social roboto ">
+					<span class="b-social__span">Follow Us:</span>
+					<a href="#"><i class="fa fa-facebook b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-twitter b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-google-plus b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-instagram b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-pinterest-p b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-youtube b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-rss b-social__icon"></i></a>
+					<a href="#"><i class="fa fa-dribbble b-social__icon"></i></a>
+				</div>
+
+				<div class="b-mail">
+					<form class="input-group" method="post">
+						<input type="email" placeholder="Your Email..." class="b-mail__email">
+						<button type="submit" class="b-mail__btn montserrat">subscribe</button>
+					</form>	
+				</div>
+			</div>
 
 
 
+			<div class="col-md-4 col-sm-12 section14__center">
+				<h3 class="montserrat latest-blogs-heading">blogs</h3>
+				<div class="latest-blogs clearfix">
 
+					<div class="latest-blogs__image">
+						<img class="latest-blogs__image-pic" src="img/fb1.jpg" alt="fb">
+					</div>
+
+					<div class="latest-blogs__text">
+						<p class="montserrat latest-blogs__text-p">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span class="roboto montserrat latest-blogs__text-sp">Jan 9, 2016</span>
+					</div>
+				</div>
+
+				<div class="latest-blogs clearfix">
+					<div class="latest-blogs__image">
+						<img class="latest-blogs__image-pic" src="img/fb2.jpg" alt="fb">
+					</div>
+
+					<div class="latest-blogs__text">
+						<p class="montserrat latest-blogs__text-p">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span class="roboto montserrat latest-blogs__text-sp">Jan 9, 2016</span>
+					</div>
+				</div>
+
+				<div class="latest-blogs clearfix">
+					<div class="latest-blogs__image">
+						<img class="latest-blogs__image-pic" src="img/fb3.jpg" alt="fb">
+					</div>
+					<div class="latest-blogs__text">
+						<p class="montserrat latest-blogs__text-p">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span class="roboto montserrat latest-blogs__text-sp">Jan 9, 2016</span>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-md-3 col-sm-12 section14__right">
+				<h3 class="montserrat">instagram</h3>
+				<div class="b-instagram">
+
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst1.jpg" alt="inst">
+					</div>
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst2.jpg" alt="inst">
+					</div>
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst3.jpg" alt="inst">
+					</div>	
+
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst4.jpg" alt="inst">
+					</div>
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst5.jpg" alt="inst">
+					</div>
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst6.jpg" alt="inst">
+					</div>
+
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst7.jpg" alt="inst">
+					</div>
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst8.jpg" alt="inst">
+					</div>
+					<div class="col-md-4 b-instagram__img-wrap">
+						<img class="img-wrap__img" src="img/inst9.jpg" alt="inst">
+					</div>		
+				</div>
+			</div>	
+
+		</div>
+
+	</section>
+	
+
+	<footer>
+		<div class="container">
+			<div class="footer__text montserrat">
+				<p> &#9400 MoGo free PSD template by <span class="footer__text-name">Volodymyr Trykoz</span></p>
+			</div>
+		</div>
+	</footer>
 
 	
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvSms4wZnMGXQ1tBxOfkeJN4CjBBar-nY&callback=myMap"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/js.js"></script>
