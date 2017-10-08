@@ -560,7 +560,9 @@ width: 4px;
 
 /*----Section7-----*/
 
-
+.picture-item {
+	position: relative;
+}
 
 .social-group-wrapper {
 	position: absolute;
