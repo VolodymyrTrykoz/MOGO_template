@@ -562,7 +562,7 @@ width: 4px;
 
 
 
-.social-group {
+.social-group-wrapper {
 	display: block;
 	position: absolute;
 	z-index: 5;
@@ -575,7 +575,7 @@ width: 4px;
 
 }
 
-.picture-item:hover .social-group {
+.picture-item:hover .social-group-wrapper {
 	opacity: 1;
 }
 
