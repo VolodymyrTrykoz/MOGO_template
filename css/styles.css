@@ -563,6 +563,7 @@ width: 4px;
 
 
 .social-group {
+	display: block;
 	position: absolute;
 	z-index: 5;
 	top: 50%;
