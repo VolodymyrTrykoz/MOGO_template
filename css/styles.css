@@ -560,11 +560,8 @@ width: 4px;
 
 /*----Section7-----*/
 
-.picture-item {
-	position: relative;
-}
 
-.social-group-wrapper {
+.picture-item__social {
 	position: absolute;
 	z-index: 5;
 	top: 50%;
@@ -576,7 +573,7 @@ width: 4px;
 
 }
 
-.picture-item:hover .social-group-wrapper {
+.picture-item:hover .picture-item__social {
 	opacity: 1;
 }
 
