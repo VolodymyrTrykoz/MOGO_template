@@ -569,7 +569,7 @@ width: 4px;
 	transform: translate( -50%, -50% );
 	cursor: pointer;
 	width: 205px;
-	opacity: 1;
+	opacity: 0;
 
 }
 
