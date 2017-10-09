@@ -882,11 +882,13 @@ width: 4px;
 
 }
 
-.img__data-number-month {
+.img__data-month {
 	font-family: 'Roboto', sans-serif;
 	font-style: italic;
 	font-size: 15px;
 	margin: 0;
+	margin-bottom: 5px;
+	text-align: center;
 }
 
 .section12_heading {

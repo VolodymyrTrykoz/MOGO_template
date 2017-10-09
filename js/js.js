@@ -1,3 +1,35 @@
+  //I was trying to trigger this function binding to scroolTop event but after compleating loading and next scroll numbers start to count backward
+ /* $(window).scroll(function(){
+    var bo = $('html').scrollTop();/*
+    /*$('#reasons_wrapper').text(bo);*/
+/*
+          if ( bo > 1000 ) 
+               $('.counter').each(function () {
+                  $(this).prop('Counter',0).animate({
+                  Counter: $(this).text()
+                      }, {
+                  duration: 4000,
+                  easing: 'swing',
+                  step: function (now) {
+                      $(this).text(Math.ceil(now));
+                   }
+            });
+      }); 
+
+  });
+*/
+
+
+// end counter
+
+
+
+
+
+
+
+
+
 //To use this map I have to add google script after my js-file in html document// after that that I have to elicit function myMap here:
 
 		function myMap() {
@@ -10,7 +42,7 @@
 				};
 
 
-
+          
 
 $(document).ready(function(){
 
@@ -22,20 +54,11 @@ $(document).ready(function(){
 		});
         
 //This function allows me to animate numbers from zero to marginal(appointed in html number) and elicits funtion with class 'counter' here:
-       $('.counter').each(function () {
-    	  $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-   		 }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-       	 }
-   		});
-});	
-// end counter
 
 
+
+
+    
 
 
 
