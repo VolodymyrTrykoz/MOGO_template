@@ -101,6 +101,10 @@ a:focus, a:hover {
 .header__nav {
 	float: right;
 }
+.nav-group, .basket, .magnifier {
+	float: left;
+}
+
 .group__item-a {
 	color: #fff;
 }

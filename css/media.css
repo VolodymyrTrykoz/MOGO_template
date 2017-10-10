@@ -71,6 +71,10 @@
 		float: none;
 	}	
 
+	.nav-group, .basket, .magnifier {
+		float: none;
+}
+
 	.nav__item {
 		display: block;
 		font-size: 12px;
