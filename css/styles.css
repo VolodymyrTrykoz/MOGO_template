@@ -76,7 +76,9 @@ a:focus, a:hover {
 	margin: 0 auto;
 	
 }
-
+.header__text {
+	width: 100%;
+}
 
 .face-page__header-wrapper {
 	display: inline-block;
@@ -132,25 +134,25 @@ a:focus, a:hover {
 }	
 
 .header__text-h2	{
-	margin-top: 135px;
-	margin-bottom: 50px;
+	margin-top: 80px;
+	margin-bottom: 30px;
 	font-family: 'Kaushan Script', cursive;
-	font-size: 72px;
+	font-size: 60px;
 
 }
 
 .header__text-h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 120px;
+	font-size: 100px;
 	font-weight: bold;
-	line-height: 1.5;
+	
 }	
 
 .divider {
 	width: 60px;
 	height: 3px;
 	background-color: #fff;
-	margin: 50px auto;
+	margin: 30px auto;
 }
 
 .header__text-learn-more {
@@ -169,47 +171,68 @@ a:focus, a:hover {
 	border: 3px solid #fce38a;
 	color: #fce38a;
 }
-.second__nav {
-	padding: 10px;
+.title-carousel-inner {
+	margin-bottom: 100px;
+}
+.carousel-indicators {
+	margin: 0;
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	bottom: -30px;
 }
-.second__nav .nav-item-line {
-	width: 90%;
+.carousel-indicators .active {
+	width: 23%;
 	height: 3px;
-	background: #fff;
+	margin: 0;
+	background: transparent;
+	border: none;
 	position: relative;
+	color:#e88383;
 }
 
-.second__nav-item:hover .nav-item-line__container-line {
-	width: 25%;
+.carousel-indicators li {
+	max-width: 23%;
+	width: 23%;
+	text-indent: 0;
+	color: #fff
+	
+}
+
+
+li.active::after {
+	width: 100%;
+	background-color: #e88383;
 	height: 3px;
-	background: #f38181;
-	transition: 0.2s linear;
-}
-.second__nav-item:hover .second-line {
-	margin-left: 25%;
-}
-.second__nav-item:hover .third-line {
-	margin-left: 50%;
-}
-.second__nav-item:hover .fouth-line {
-	margin-left: 75%;
-}
-.second__nav-item:hover .nav-item-description p {
-	color: #f38181;
+	bottom: 0;
+	animation: width 5s linear;
 }
 
-.second__nav-item {
-	display: block;
-	width: 25%;
+.carousel-indicators__inner-text {
 	float: left;
-	font-family: 'Montserrat';
-	font-size: 16px;
+	margin-top: 15px;
+	font-family: 'Montserrat', sans-serif;
 
 }
-.nav-item-description {
-	padding-top: 15px;
+
+.carousel-indicators__inner-text--number {
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 5px;
 }
+
+.carousel-indicators__inner-text--text {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
 .nav-item-description__number {
 	font-size: 20px;
 	position: relative;
@@ -226,7 +249,7 @@ a:focus, a:hover {
 
 /*----Section1-----*/
 
-.h4_descr {
+.section__heading {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 24px;
 	padding-top: 100px;
@@ -234,7 +257,7 @@ a:focus, a:hover {
 	color: #333;
 }
 
-.h3_descr {
+.section__subheading {
 	font-family: 'Montserrat';
 	font-size: 30px;
 	font-weight: 800;
@@ -450,7 +473,9 @@ a:focus, a:hover {
 .accordion_heading {
 	position: relative;
 }
-
+.section5__accordion a {
+	 color: #404040;
+}
 .accordion_heading__link, 
 .accordion_heading__link:visited,
 .accordion_heading__link:hover {
@@ -766,7 +791,6 @@ width: 4px;
 	padding: 100px 0;
 	width: 80%;
 	margin: 0 auto;
-	
 }
 
 
@@ -790,11 +814,11 @@ width: 4px;
 }
 
 .section10__item-wrapper .carousel-control-prev {
-	left: -150px;
+	left: -100px;
 	
 }
 .section10__item-wrapper .carousel-control-next {
-	right: -150px;
+	right: -100px;
 	
 }
 
@@ -916,24 +940,13 @@ width: 4px;
 
 .section13 {
 	margin: 115px 0 90px 0;
-	
 	height: 200px;
 }
 
-.section13__wrapper {
-	height: 200px;
-	width: 100%;
-	
-	
-	
-}
 
 .section13__map {
 	width: auto;
 	height: 200px;
-
-
-	
 }
 
 
@@ -1091,3 +1104,21 @@ width: 4px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*Animation*/
+
+
+ @keyframes width {
+    from {width: 0%;}
+    to {width: 100%;}
+}

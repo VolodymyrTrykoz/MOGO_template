@@ -59,14 +59,21 @@
 
 @media screen and (max-width: 690px) {
 /*----Header-----*/	
+	.header__logo {
+		
+	    font-size: 15px;
+	    margin-top: 10px;
+}
+
+
 	.header__nav {
-		margin-top: 80px;
+		margin-top: 5px;
 		float: none;
 	}	
 
 	.nav__item {
 		display: block;
-		font-size: 16px;
+		font-size: 12px;
 		text-align: center;
 		font-weight: 800;
 		padding: 10px 0 0 0;
@@ -84,32 +91,25 @@
 	}
 
 	.header__text-h2 {
-		font-size: 50px;
-		margin-top: 30px;
+		font-size: 30px;
+		margin: 0;
 	}
 
 	.header__text-h1 {
 		margin-top: 10px;
 		margin-bottom: 20px;
-		font-size: 50px;
+		font-size: 35px;
 	}
 
 	.header__text-learn-more {
-    	margin-bottom: 80px;
+		margin-bottom: 20px;
 	}
 
-	.nav-item-description__number {
-		display: none;
+	.carousel-indicators__inner-text--number {
+		font-size: 15px;
 	}
-
-	.second__nav-item {
-		text-align: center;
-	}
-	.nav-item-description__text {
-		font-size: 10px;
-	}
-	.h4_descr {
-		padding-top: 200px;
+	.carousel-indicators__inner-text--text {
+		font-size: 12px;
 	}
 
 	.section1-figure-group {
@@ -154,6 +154,16 @@
 	/*----Section6-----*/	
 	.carousel-item-wrapper__icon {
 		font-size: 30px;
+
+	}
+
+	.section6__item-wrapper	 .carousel-control-prev {
+		left: 50px;
+		top: -100px;
+	}
+	.section6__item-wrapper	 .carousel-control-next {
+		right: 50px;
+		top: -100px;
 	}
 
 	/*----Section9-----*/
