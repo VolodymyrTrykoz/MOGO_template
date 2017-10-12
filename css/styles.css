@@ -109,18 +109,15 @@ a:focus, a:hover {
 	text-decoration: none;
 	color: #fff;
 } 	
-.header__nav {
+.menu-items {
 	float: right;
 }
 .nav-group, .basket, .magnifier {
 	float: left;
 }
 
-.group__item-a {
-	color: #fff;
-}
 
-.nav__item {
+.menu-items-decor {
  	font-family: 'Montserrat', sans-serif;
  	font-size: 14px;
  	display: inline-block;
@@ -131,7 +128,7 @@ a:focus, a:hover {
  	position: relative;
 }
 
-.nav__item::after {
+.menu-items-decor::after {
 	content: "";
 	display: block;
     height: 2px;
@@ -141,14 +138,15 @@ a:focus, a:hover {
     transition: width 0.2s linear;
 }
 
-.nav__item:hover::after,
-.nav__item:hover .group__item-a,
-.nav__item:hover .group__item-fa{
+.menu-items-decor:hover::after,
+.menu-items-decor:hover .menu-items-decor__a,
+.menu-items-decor:hover .group__item-fa{
 	width: 100%;
 	color: #fce38a;
+	cursor: pointer;
 }	
 
-.header__text-h2	{
+.header__text--cursive	{
 	margin-top: 80px;
 	margin-bottom: 30px;
 	font-family: 'Kaushan Script', cursive;
@@ -156,7 +154,7 @@ a:focus, a:hover {
 
 }
 
-.header__text-h1 {
+.header__text--bold {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 100px;
 	font-weight: bold;
@@ -186,9 +184,7 @@ a:focus, a:hover {
 	border: 3px solid #fce38a;
 	color: #fce38a;
 }
-.title-carousel-inner {
-	margin-bottom: 100px;
-}
+
 .carousel-indicators {
 	margin: 0;
 	width: 100%;
@@ -250,9 +246,7 @@ li.active::after {
 	font-weight: bold;
 	color: #fff;
 }
-.nav-item-description__text {
-	color: #fff;
-}
+
 
 
 /*----Section1-----*/
@@ -283,9 +277,6 @@ li.active::after {
 	background-color: #f38181;
 }
 
-.story-img-wrapper{
-	margin-bottom: 110px;
-}
 
 .picture-item {
 	position: relative;
@@ -411,10 +402,6 @@ li.active::after {
 	margin-bottom: 40px;
 }
 
-.section3__h5-descr {	
-	color: #999;
-}
-
 
 /*----Section4-----*/
 
@@ -426,7 +413,7 @@ li.active::after {
 }
 
 
-.section4__tablet {
+.unique-design__tablet {
 	background-image: url(../img/tablet.png);
 	background-repeat: no-repeat;
 	max-width: 477px;
@@ -438,7 +425,7 @@ li.active::after {
 
 }
 
-.section4__phone {
+.unique-design__phone {
 	background-image: url(../img/phone.png);
 	width: 211px;
 	height: 449px;
@@ -637,12 +624,12 @@ width: 4px;
 
 /*----Section8-----*/
 
-.section8 {
+.brends-box {
 	background-color: #f8f8f8;
 	margin-top: 120px;
 }
 
-.section8__brends {
+.brands-box__position {
 	padding: 60px 0;
 	display: flex;
 	justify-content: space-around;
@@ -937,25 +924,16 @@ width: 4px;
 
 /*----Section13-----*/
 
-.map__wrapper {
+.map__wrapper-box {
 	margin: 115px 0 90px 0;
 	height: 200px;
 }
 
 
-.my__map {
+.map-sizing {
 	width: auto;
 	height: 200px;
 }
-
-
-
-
-
-
-
-
-
 
 /*----Section14-----*/
 .mogo-bottom__wrapper {
