@@ -10,10 +10,6 @@
 
 /*----Section1-----*/
 
-	.second_nav {
-		position: relative;
-		top: -30px;
-	}
 
 	.section1-figure-group {
 		margin-bottom: 15px;
@@ -109,10 +105,10 @@
 		margin-bottom: 20px;
 	}
 
-	.carousel-indicators__inner-text--number {
-		font-size: 15px;
+	.inner-text__number {
+		display: none;
 	}
-	.carousel-indicators__inner-text--text {
+	.inner-text__descr {
 		font-size: 12px;
 	}
 
@@ -132,7 +128,7 @@
 
 
 	/*----Section2-----*/	
-	.section2__number {
+	.counter-number__wrapper {
 		width: 100%;
 		border-bottom: 1px solid #fff;
 
@@ -146,13 +142,15 @@
 	}
 
 	.section4__phone {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 		width: 150px;
 		height: 350px;
 		background-size: contain;
 		background-repeat: no-repeat;
-		left: 50%;
-		bottom: -350px;
-		transform: translateX(-50%);
+		
+
 	}
 
 	/*----Section6-----*/	
@@ -171,16 +169,24 @@
 	}
 
 	/*----Section9-----*/
-	.section9__portfolio-item-icon,
-	.section9__portfolio-item__obligation	 {
+	.basis-item__icon,
+	.basis-item__obligation	 {
 		font-size: 10px;
 	}
-	.section9__portfolio-item__descr {
+	.basis-item__descr {
 		display: none;
 	}
+
+	/*----Section10-----*/	
+	.roboto {
+		display: block;   
+	}
+
 	/*----Section12-----*/	
 	.our-stories {
 		margin-bottom: 20px;
 	}
+
+	
 	
 }

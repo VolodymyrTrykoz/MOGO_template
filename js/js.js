@@ -1,8 +1,8 @@
   //I was trying to trigger this function binding to scroolTop event but after compleating loading and next scroll numbers start to count backward
- /* $(window).scroll(function(){
+  $(window).scroll(function(){
     var bo = $('html').scrollTop();/*
     /*$('#reasons_wrapper').text(bo);*/
-/*
+
           if ( bo > 1000 ) 
                $('.counter').each(function () {
                   $(this).prop('Counter',0).animate({
@@ -17,7 +17,6 @@
       }); 
 
   });
-*/
 
 
 // end counter
