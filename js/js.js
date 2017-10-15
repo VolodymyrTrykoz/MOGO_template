@@ -55,7 +55,9 @@ $(document).ready(function(){
 //This function allows me to animate numbers from zero to marginal(appointed in html number) and elicits funtion with class 'counter' here:
 
 
-
+  $('.fa-angle-down').click(function(){
+     $(this).toggleClass('fa-icon--opend');
+  });//end click
 
     
 

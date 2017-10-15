@@ -26,18 +26,6 @@ But I neder thought about drawbacks that you mentioned yesterday :)  */
 
 */
 
-
-
-
-/*----Heared-----*/
-
-
-
-a:focus, a:hover {
-	text-decoration: none;
-	color: #fff;
-}
-
 .roboto {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
@@ -52,9 +40,6 @@ a:focus, a:hover {
 	color: #333;
 	text-transform: uppercase;
 }
-.white {
-	color: #fff;
-}
 
 .mb-100 {
 	margin-bottom: 100px;
@@ -63,6 +48,27 @@ a:focus, a:hover {
 .mr-15 {
 	margin-right: 15px;
 }
+.pad-t-b-10 {
+	padding: 10px 0;
+}
+.higlight-color {
+	color: #fff;
+}
+
+
+
+/*------------------------------------*\
+				Heared
+\*------------------------------------*/
+
+
+
+a:focus, a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+
 
 .face-page-bg {
 	background-image: url(../img/main_bg.jpg);
@@ -98,8 +104,7 @@ a:focus, a:hover {
 
 .header__logo {
 	float: left;
-	color: #fff;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 30px;
     margin-top: 25px;
@@ -107,11 +112,12 @@ a:focus, a:hover {
 
 .header__logo:hover {
 	text-decoration: none;
-	color: #fff;
 } 	
+
 .menu-items {
 	float: right;
 }
+
 .nav-group, .basket, .magnifier {
 	float: left;
 }
@@ -121,7 +127,6 @@ a:focus, a:hover {
  	font-family: 'Montserrat', sans-serif;
  	font-size: 14px;
  	display: inline-block;
- 	color: #fff;
  	padding: 30px 0 10px 0;
  	margin: 0 25px;
  	transition: 0.15s linear;
@@ -169,7 +174,6 @@ a:focus, a:hover {
 }
 
 .header__text-learn-more {
-	color: #fff;
 	background: transparent;
 	border: 3px solid #fff;
 	padding: 12px 40px; 
@@ -206,17 +210,15 @@ a:focus, a:hover {
 	max-width: 23%;
 	width: 23%;
 	text-indent: 0;
-	color: #fff
-	
 }
 
 
 li.active::after {
 	width: 100%;
-	background-color: #e88383;
 	height: 3px;
 	bottom: 0;
-	animation: width 5s linear;
+	background-color: rgba(228,215,135,.6);
+	animation: width 5s ease;
 }
 
 .carousel-indicators__inner-text {
@@ -237,19 +239,11 @@ li.active::after {
 	font-size: 16px;
 }
 
-.nav-item-description__number {
-	font-size: 20px;
-	position: relative;
-	top: -3px;
-	float: left;
-	padding-right: 15px;
-	font-weight: bold;
-	color: #fff;
-}
 
 
-
-/*----Section1-----*/
+/*------------------------------------*\
+				Section1
+\*------------------------------------*/
 
 .section__heading {
 	font-family: 'Kaushan Script', cursive;
@@ -344,11 +338,10 @@ li.active::after {
 }
 
 
-
-
-/*----Section2-----*/
-.section2 {
-	padding: 0;
+/*------------------------------------*\
+				Section2
+\*------------------------------------*/
+.counter-block--bg {
 	background-color: #95e1d3;
 }
 
@@ -359,51 +352,42 @@ li.active::after {
 	padding-top: 90px;
 	padding-bottom: 90px;
 	text-transform: uppercase;
-	color: #fff;
+	
 }
 
-.counter {
+.counter--style {
 	font-weight: 800;
 	font-size: 72px;
-	color: #fff;
 }
 
-/*----Section3-----*/
+/*------------------------------------*\
+				Section3
+\*------------------------------------*/
 
-.section3__service-group {
-	margin-bottom: 115px;
-}
-.section3__service {
-	display: inline-block;
-}
-.section3__wrap-icon {
-	width: 20%;
-	height: 100%;
-	float: left;
-}
 
-.section3__wrap-text {
+
+.service__wrap-text {
 	width: 80%;
-	float: right;
-
+	
 }
-.fa-icon {
+
+.fa-service-icon {
 	font-size: 35px;
 	color:  #95e1d3;
-	position: relative;
-	top: 5px;
+	
+	
 }
-.section3_divider {
+.service_divider {
 	height: 1px;
 	color: #e5e5e5;
 	width: 100%;
 	position: relative;
-	top: 20px;
-	margin-bottom: 40px;
+
 }
 
-
-/*----Section4-----*/
+/*------------------------------------*\
+				Section4
+\*------------------------------------*/
 
 .section4 {
 	background-image: url(../img/section4_bg.png);
@@ -435,7 +419,9 @@ li.active::after {
 	
 }
 
-/*----Section5-----*/
+/*------------------------------------*\
+				Section5
+\*------------------------------------*/
 
 
 .section5__accordion-img {
@@ -461,6 +447,14 @@ li.active::after {
 .accordion_heading {
 	position: relative;
 }
+.fa-icon {
+	font-size: 20px;
+	 color: #95e1d3
+}
+
+.fa-icon--opend {
+	transform: rotate(180deg);
+}
 
 .accordion_heading__link, 
 .accordion_heading__link:visited,
@@ -472,6 +466,7 @@ li.active::after {
     display: block;
     position: relative;
     transform: translateY(-15%);
+
 
 }
 
@@ -522,8 +517,9 @@ width: 4px;
 
 
 
-
-/*----Section6-----*/
+/*------------------------------------*\
+				Section6
+\*------------------------------------*/
 
 .section6 {
 	background-color: #f8f8f8;
@@ -569,7 +565,9 @@ width: 4px;
 }
 
 
-/*----Section7-----*/
+/*------------------------------------*\
+				Section7
+\*------------------------------------*/
 
 
 .picture-item__social {
@@ -622,7 +620,9 @@ width: 4px;
 
 /*Ending gradient-hover spruce-up*/
 
-/*----Section8-----*/
+/*------------------------------------*\
+				Section8
+\*------------------------------------*/
 
 .brends-box {
 	background-color: #f8f8f8;
@@ -638,7 +638,9 @@ width: 4px;
 }
 
 
-/*----Section9-----*/
+/*------------------------------------*\
+				Section9
+\*------------------------------------*/
 /*
 .grid	{
 	display: grid;
@@ -770,7 +772,9 @@ width: 4px;
 	font-style: italic;
 }
 
-/*----Section10-----*/
+/*------------------------------------*\
+				Section10
+\*------------------------------------*/
 
 
 .section10__item-wrapper {
@@ -812,7 +816,9 @@ width: 4px;
 
 
 
-/*----Section11-----*/
+/*------------------------------------*\
+				Section11
+\*------------------------------------*/
 
 	.section11 {
 		background-image: url(../img/clientbg.jpg);
@@ -865,8 +871,9 @@ width: 4px;
 	
 
 
-
-/*----Section12-----*/
+/*------------------------------------*\
+				Section12
+\*------------------------------------*/
 .img__wrapper {
 	position: relative;
 }
@@ -921,8 +928,9 @@ width: 4px;
 	color: #c6c6c6;
 }
 
-
-/*----Section13-----*/
+/*------------------------------------*\
+				Section13
+\*------------------------------------*/
 
 .map__wrapper-box {
 	margin: 115px 0 90px 0;
@@ -935,7 +943,9 @@ width: 4px;
 	height: 200px;
 }
 
-/*----Section14-----*/
+/*------------------------------------*\
+				Section14
+\*------------------------------------*/
 .mogo-bottom__wrapper {
 	padding-bottom: 40px;
 	border-bottom: 1px solid #e5e5e5;
@@ -1074,7 +1084,9 @@ width: 4px;
 }
 
 
-/*----Footer-----*/
+/*------------------------------------*\
+				Footer
+\*------------------------------------*/
 
 .footer__text {
 	text-align: center;
@@ -1097,11 +1109,13 @@ width: 4px;
 
 
 
-
-/*Animation*/
+/*------------------------------------*\
+				animation
+\*------------------------------------*/
 
 
  @keyframes width {
     from {width: 0%;}
-    to {width: 100%;}
+    to {width: 100%;
+    	background-color: #e88383;}
 }
