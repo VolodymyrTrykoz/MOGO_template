@@ -53,7 +53,7 @@ $(document).ready(function(){
 		});
         
 
-//I know that this is wrong way because when I click on parent, the aroow don't moves ((
+//I know that this is wrong way because when I click on parent, the aroow doesn't move ((
 //angle rotator
   $('.fa-angle-down').click(function(){
      $(this).toggleClass('fa-icon--opend');
