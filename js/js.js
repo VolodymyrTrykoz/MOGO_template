@@ -52,9 +52,9 @@ $(document).ready(function(){
     	$('.collapse',$otherPanels).removeClass('in');
 		});
         
-//This function allows me to animate numbers from zero to marginal(appointed in html number) and elicits funtion with class 'counter' here:
 
-
+//I know that this is wrong way because when I click on parent, the aroow don't moves ((
+//angle rotator
   $('.fa-angle-down').click(function(){
      $(this).toggleClass('fa-icon--opend');
   });//end click
