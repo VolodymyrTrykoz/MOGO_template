@@ -30,9 +30,15 @@ But I neder thought about drawbacks that you mentioned yesterday :)  */
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	color: #b3b3b3;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .montserrat {
 	font-family: 'Montserrat', sans-serif;
@@ -129,6 +135,8 @@ a:focus, a:hover {
  	display: inline-block;
  	padding: 30px 0 10px 0;
  	margin: 0 25px;
+ 	-webkit-transition: 0.15s linear;
+ 	-o-transition: 0.15s linear;
  	transition: 0.15s linear;
  	position: relative;
 }
@@ -140,6 +148,8 @@ a:focus, a:hover {
     margin-top: 5px;
     width: 0%;
     background-color: #fce38a;
+    -webkit-transition: width 0.2s linear;
+    -o-transition: width 0.2s linear;
     transition: width 0.2s linear;
 }
 
@@ -181,6 +191,8 @@ a:focus, a:hover {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
+	-webkit-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
 	transition: 0.5s linear;
 }
 .header__text-learn-more:hover {
@@ -192,8 +204,12 @@ a:focus, a:hover {
 .carousel-indicators {
 	margin: 0;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	bottom: -30px;
 }
 .carousel-indicators .active {
@@ -218,7 +234,8 @@ li.active::after {
 	height: 3px;
 	bottom: 0;
 	background-color: rgba(228,215,135,.6);
-	animation: width 5s ease;
+	-webkit-animation: width 5s ease;
+	        animation: width 5s ease;
 }
 
 .carousel-indicators__inner-text {
@@ -276,12 +293,17 @@ li.active::after {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 }
 
 .picture-item:hover {
-	box-shadow: 10px 10px #95e1d3;
-	transform: translate(-10px, -10px);
+	-webkit-box-shadow: 10px 10px #95e1d3;
+	        box-shadow: 10px 10px #95e1d3;
+	-webkit-transform: translate(-10px, -10px);
+	    -ms-transform: translate(-10px, -10px);
+	        transform: translate(-10px, -10px);
 	
 }
 
@@ -290,6 +312,8 @@ li.active::after {
 }
 
 .picture-item__img{
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 	width: 100%;
 	height: 100%;
@@ -307,6 +331,8 @@ li.active::after {
 	background: -o-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
 	background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
 	opacity: 0;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 	cursor: pointer;
 }
@@ -317,12 +343,16 @@ li.active::after {
 	top: 50%;
 	left: 50%;
 	z-index: 5;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: 15px;
 	color: #fff;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 	opacity: 0;
 
@@ -405,7 +435,9 @@ li.active::after {
 	position: relative;
 	left: 50%;
 	bottom: 0;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 
 }
 
@@ -453,7 +485,9 @@ li.active::after {
 }
 
 .fa-icon--opend {
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 
 .accordion_heading__link, 
@@ -465,7 +499,9 @@ li.active::after {
     font-size: 14px;
     display: block;
     position: relative;
-    transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+        -ms-transform: translateY(-15%);
+            transform: translateY(-15%);
 }
 
 /*making shevrons rotate whether sidebar is opened or closed*/
@@ -551,7 +587,9 @@ li.active::after {
 	z-index: 5;
 	top: 50%;
 	left: 50%;
-	transform: translate( -50%, -50% );
+	-webkit-transform: translate( -50%, -50% );
+	    -ms-transform: translate( -50%, -50% );
+	        transform: translate( -50%, -50% );
 	cursor: pointer;
 	width: 205px;
 	opacity: 0;
@@ -574,6 +612,8 @@ li.active::after {
 	padding: 5px;
 	background-color: #fce38a;
 	margin-right: 1px;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 }
 
@@ -607,10 +647,16 @@ li.active::after {
 
 .brands-box__position {
 	padding: 60px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-flow: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-flow: wrap;
+	    flex-flow: wrap;
 }
 
 
@@ -696,9 +742,13 @@ li.active::after {
 	z-index: 1;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	font-size: 15px;
 	color: #fff;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 	opacity: 0;
 
@@ -716,6 +766,8 @@ li.active::after {
 	background: -webkit-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
 	background: -o-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
 	background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 	opacity: 0;
 
@@ -958,6 +1010,8 @@ li.active::after {
 .b-social__icon {
 	margin-left: 10px;
 	color: #95e1d3;
+	-webkit-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
 .b-social__icon:hover {
@@ -972,27 +1026,26 @@ li.active::after {
 	width: 228px;
 	height: 40px;
 	border: 1px solid #e7e7e7;
+	padding-left: 15px;
+	color: #d2d2d2;
+	font-style: italic;
 }
 
 .b-mail__email::-webkit-input-placeholder {
 	color: #d2d2d2;
-	padding-left: 15px;
 	font-style: italic;
 }
 
 .b-mail__email::-moz-placeholder { /* Firefox 19+ */
   	color: #d2d2d2;
-	padding-left: 15px;
 	font-style: italic;
 }
 .b-mail__email:-ms-input-placeholder { /* IE 10+ */
   	color: #d2d2d2;
-	padding-left: 15px;
 	font-style: italic;
 }
 .b-mail__email:-moz-placeholder { /* Firefox 18- */
   	color: #d2d2d2;
-	padding-left: 15px;
 	font-style: italic;
 }
 
@@ -1002,6 +1055,8 @@ li.active::after {
 	height: 40px;
 	border: none;
 	color: #fff;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 	transition: 0.2s linear;
 }
 .b-mail__btn:hover {
@@ -1076,18 +1131,16 @@ li.active::after {
 
 
 
-
-
-
-
-
-
-
-
-
 /*------------------------------------*\
 				animation
 \*------------------------------------*/
+
+
+ @-webkit-keyframes width {
+    from {width: 0%;}
+    to {width: 100%;
+    	background-color: #e88383;}
+}
 
 
  @keyframes width {

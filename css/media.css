@@ -128,7 +128,9 @@
 	.section1-figure-group {
 		position: relative;
 		left: 50%;
-		transform: translate(-50%);
+		-webkit-transform: translate(-50%);
+		    -ms-transform: translate(-50%);
+		        transform: translate(-50%);
 	}
 
 	.mar-bot-20-sm {
@@ -161,7 +163,9 @@
 	.unique-design__phone {
 		position: relative;
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		width: 150px;
 		height: 350px;
 		background-size: contain;
