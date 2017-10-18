@@ -21,14 +21,6 @@
 
 // end counter
 
-
-
-
-
-
-
-
-
 //To use this map I have to add google script after my js-file in html document// after that that I have to elicit function myMap here:
 
 		function myMap() {
@@ -51,16 +43,6 @@ $(document).ready(function(){
    		 $otherPanels = $(this).parents('.panel-group').siblings('.panel-group');
     	$('.collapse',$otherPanels).removeClass('in');
 		});
-        
-
-//I know that this is wrong way because when I click on parent, the aroow doesn't move ((
-//angle rotator
-  $('.fa-angle-down').click(function(){
-     $(this).toggleClass('fa-icon--opend');
-  });//end click
-
-    
-
 
 
 });//end ready
