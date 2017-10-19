@@ -15,15 +15,6 @@ But I neder thought about drawbacks that you mentioned yesterday :)  */
 		font-family: 'Kaushan Script', cursive;
 
 
-		jQuery Plugins:
-
-		jQuery Waypoints
-		COUNTER-UP
-		BxSlider
-		Accordion
-		Fastclick js
-		Responsive-nav Js
-
 */
 
 .roboto {
@@ -666,23 +657,6 @@ li.active::after {
 /*
 .grid	{
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: (100px, auto);
-}
-.image {
-	background-size: contain;	
-	background-repeat: no-repeat;
-
-	border: 1px solid purple;
-}
-
-.image-first {
-	background-image: url(../img/pf1.jpg);
-	
-}
-
-.image-second {
-	background-image: url(../img/pf2.jpg);
 	
 	
 }
@@ -692,34 +666,15 @@ li.active::after {
 	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 3;
-	background-image: url(../img/pf3.jpg);
+	
 	
 }
- 
-.image-fourth {
-	background-image: url(../img/pf4.jpg);
-	
-}
+*/ 
 
-.image-fifth {
-	background-image: url(../img/pf5.jpg);
-	
-	
-}
-
-.image-sixth {
-	background-image: url(../img/pf6.jpg);
-	
-}
-
-.image-seventh {
-	background-image: url(../img/pf7.jpg);
-	
-}
-*/
 
 
 /*---------------------------------------------*/
+
 .portfolio {
 	text-align: center;
 	margin: 0 auto;
@@ -1009,13 +964,16 @@ li.active::after {
 
 .b-social__icon {
 	margin-left: 10px;
-	color: #95e1d3;
+	fill: #95e1d3;
+	width: 15px;
+	height: 15px;
 	-webkit-transition: color 0.2s linear;
 	-o-transition: color 0.2s linear;
 	transition: color 0.2s linear;
+	cursor: pointer;
 }
 .b-social__icon:hover {
-	color:#5dc0ae;
+	fill: #5dc0ae;
 }
 
 .b-mail {
